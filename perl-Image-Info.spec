@@ -5,11 +5,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Image
 %define	pnam	Info
-Summary:	Image::Info - Extract meta information from image files
-Summary(pl):	Image::Info - Wyodrêbnij meta-informacje z plików graficznych
+Summary:	Image::Info - extract meta information from image files
+Summary(pl):	Image::Info - wyodrêbnienie meta-informacji z plików graficznych
 Name:		perl-Image-Info
 Version:	1.16
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -59,7 +59,8 @@ formaty plików:
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
