@@ -23,12 +23,12 @@ Summary(sv):	Image::Info Perlmodul
 Summary(uk):	Модуль для Perl Image::Info
 Summary(zh_CN):	Image::Info Perl дё©И
 Name:		perl-Image-Info
-Version:	1.15
+Version:	1.16
 Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	bbcb9cd2b2309c2fed14bd7f18b402a8
+# Source0-md5:	502b6299ef2d41f67bca4e1f7d9335ab
 Patch0:		%{name}-perl5.6-segv.patch
 BuildRequires:	perl-devel >= 5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
