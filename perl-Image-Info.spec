@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Image
 %define	pnam	Info
-Summary:	Image-Info perl module
-Summary(pl):	Modu³ perla Image-Info
+Summary:	Image::Info perl module
+Summary(pl):	Modu³ perla Image::Info
 Name:		perl-Image-Info
 Version:	1.09
 Release:	1
