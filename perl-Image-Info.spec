@@ -14,7 +14,7 @@ Summary(fr):	Module Perl Image::Info
 Summary(it):	Modulo di Perl Image::Info
 Summary(ja):	Image::Info Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Image::Info ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Image::Info
+Summary(nb):	Perlmodul Image::Info
 Summary(pl):	Modu³ Perla Image::Info
 Summary(pt):	Módulo de Perl Image::Info
 Summary(pt_BR):	Módulo Perl Image::Info
