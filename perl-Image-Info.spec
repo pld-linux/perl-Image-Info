@@ -28,6 +28,7 @@ Release:	2
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	be1aa05997b119e986bd0a90f1a6c3c5
 Patch0:		%{name}-perl5.6-segv.patch
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-IO-String >= 1
