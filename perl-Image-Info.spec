@@ -25,7 +25,8 @@ Summary(zh_CN):	Image::Info Perl Ä£¿é
 Name:		perl-Image-Info
 Version:	1.16
 Release:	1
-License:	distributable
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	502b6299ef2d41f67bca4e1f7d9335ab
