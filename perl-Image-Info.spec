@@ -23,7 +23,7 @@ Summary(sv):	Image::Info Perlmodul
 Summary(uk):	Модуль для Perl Image::Info
 Summary(zh_CN):	Image::Info Perl дё©И
 Name:		perl-Image-Info
-Version:	1.11
+Version:	1.12
 Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
