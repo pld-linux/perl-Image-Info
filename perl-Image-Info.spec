@@ -9,7 +9,7 @@ Summary:	Image::Info - extract meta information from image files
 Summary(pl):	Image::Info - wyodrêbnienie meta-informacji z plików graficznych
 Name:		perl-Image-Info
 Version:	1.16
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
