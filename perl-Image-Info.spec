@@ -4,7 +4,7 @@
 Summary:	Image::Info perl module
 Summary(pl):	Modu³ perla Image::Info
 Name:		perl-Image-Info
-Version:	1.09
+Version:	1.10
 Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
