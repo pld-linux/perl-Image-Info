@@ -16,29 +16,29 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This Perl extention allows you to extract meta information from
-various types of image files.  In this release the following file
+various types of image files. In this release the following file
 formats are supported:
 
-   * JPEG (plain JFIF and Exif)
-   * PNG
-   * GIF
-   * PBM/PGM/PPM
-   * SVG
-   * XBM/XPM
-   * BMP/DIB/RLE
+   - JPEG (plain JFIF and Exif)
+   - PNG
+   - GIF
+   - PBM/PGM/PPM
+   - SVG
+   - XBM/XPM
+   - BMP/DIB/RLE
 
 %description -l pl
-To rozszerzenie perla pozwala na wyci±ganie meta-informacji
-z ró¿nych typów plików graficznych. W tej wersji nastêpuj±ce
-formaty plików s± obs³ugiwane:
+To rozszerzenie perla pozwala na wyci±ganie meta-informacji z ró¿nych
+typów plików graficznych. W tej wersji nastêpuj±ce formaty plików s±
+obs³ugiwane:
 
-   * JPEG (plain JFIF and Exif)
-   * PNG
-   * GIF
-   * PBM/PGM/PPM
-   * SVG
-   * XBM/XPM
-   * BMP/DIB/RLE
+   - JPEG (plain JFIF and Exif)
+   - PNG
+   - GIF
+   - PBM/PGM/PPM
+   - SVG
+   - XBM/XPM
+   - BMP/DIB/RLE
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
