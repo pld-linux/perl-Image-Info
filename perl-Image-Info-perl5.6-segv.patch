@@ -1,0 +1,56 @@
+--- Image-Info-1.12/lib/Image/Info/JPEG.pm.orig	Tue Dec 31 01:03:06 2002
++++ Image-Info-1.12/lib/Image/Info/JPEG.pm	Fri Feb 14 20:38:23 2003
+@@ -55,27 +55,6 @@
+     $buf;
+ }
+ 
+-BEGIN {
+-    my $f = ($] >= 5.008) ? <<'EOT' : <<'EOT';
+-        sub with_io_string (&$) {
+-	    open(my $fh, "<", \$_[1]);
+-	    local $_ = $fh;
+-	    &{$_[0]};
+-	}
+-EOT
+-	sub with_io_string (&$) {
+-	    require IO::String;
+-	    local $_ = IO::String->new($_[1]);
+-	    &{$_[0]};
+-	    $_->close;
+-	}
+-EOT
+-
+-    #print $f;
+-    eval $f;
+-    die $@ if $@;
+-}
+-
+ sub process_file
+ {
+     my($info, $fh, $cnf) = @_;
+@@ -226,9 +205,9 @@
+ 
+     if ($code == 0x10) {
+ 	eval {
+-	    with_io_string {
+-		_process_file($info, $_, 1);
+-	    } $data;
++	    require IO::String;
++	    my $thumb_fh = IO::String->new($data);
++	    _process_file($info, $thumb_fh, 1);
+ 	};
+ 	$info->push_info(1, "error" => $@) if $@;
+     }
+@@ -261,9 +240,9 @@
+ 	    my $jdata = substr($data, $ipos, $ilen);
+ 	    #$info->push_info($i, "JPEGImage" => $jdata);
+ 
+-	    with_io_string {
+-		_process_file($info, $_, $i);
+-	    } $jdata;
++	    require IO::String;
++	    my $fh = IO::String->new($jdata);
++	    _process_file($info, $fh, $i);
+ 	}
+ 
+ 	# Turn XResolution/YResolution into 'resolution'

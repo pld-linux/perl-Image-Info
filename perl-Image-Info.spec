@@ -28,6 +28,7 @@ Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Patch0:		%{name}-perl5.6-segv.patch
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-IO-String >= 1
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -60,6 +61,7 @@ formaty plików:
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch -p1
 
 %build
 perl Makefile.PL
