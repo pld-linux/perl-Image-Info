@@ -1,10 +1,29 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Image
 %define	pnam	Info
 Summary:	Image::Info perl module
-Summary(pl):	Modu³ perla Image::Info
+Summary(cs):	Modul Image::Info pro Perl
+Summary(da):	Perlmodul Image::Info
+Summary(de):	Image::Info Perl Modul
+Summary(es):	Módulo de Perl Image::Info
+Summary(fr):	Module Perl Image::Info
+Summary(it):	Modulo di Perl Image::Info
+Summary(ja):	Image::Info Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Image::Info ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Image::Info
+Summary(pl):	Modu³ Perla Image::Info
+Summary(pt):	Módulo de Perl Image::Info
+Summary(pt_BR):	Módulo Perl Image::Info
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Image::Info
+Summary(sv):	Image::Info Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Image::Info
+Summary(zh_CN):	Image::Info Perl Ä£¿é
 Name:		perl-Image-Info
-Version:	1.10
+Version:	1.11
 Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
@@ -45,6 +64,7 @@ formaty plików:
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
