@@ -5,23 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Image
 %define	pnam	Info
-Summary:	Image::Info perl module
-Summary(cs):	Modul Image::Info pro Perl
-Summary(da):	Perlmodul Image::Info
-Summary(de):	Image::Info Perl Modul
-Summary(es):	Módulo de Perl Image::Info
-Summary(fr):	Module Perl Image::Info
-Summary(it):	Modulo di Perl Image::Info
-Summary(ja):	Image::Info Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Image::Info ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul Image::Info
-Summary(pl):	Modu³ Perla Image::Info
-Summary(pt):	Módulo de Perl Image::Info
-Summary(pt_BR):	Módulo Perl Image::Info
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Image::Info
-Summary(sv):	Image::Info Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Image::Info
-Summary(zh_CN):	Image::Info Perl Ä£¿é
+Summary:	Image::Info - Extract meta information from image files
+Summary(pl):	Image::Info - Wyodrêbnij meta-informacje z plików graficznych
 Name:		perl-Image-Info
 Version:	1.16
 Release:	1
