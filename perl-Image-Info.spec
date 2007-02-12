@@ -6,7 +6,7 @@
 %define		pdir	Image
 %define		pnam	Info
 Summary:	Image::Info - extract meta information from image files
-Summary(pl):	Image::Info - wyodrêbnienie meta-informacji z plików graficznych
+Summary(pl.UTF-8):   Image::Info - wyodrÄ™bnienie meta-informacji z plikÃ³w graficznych
 Name:		perl-Image-Info
 Version:	1.16
 Release:	3
@@ -37,10 +37,10 @@ formats are supported:
  - XBM/XPM
  - BMP/DIB/RLE
 
-%description -l pl
-To rozszerzenie perla pozwala na wyci±ganie meta-informacji z ró¿nych
-typów plików graficznych. W tej wersji obs³ugiwane s± nastêpuj±ce
-formaty plików:
+%description -l pl.UTF-8
+To rozszerzenie perla pozwala na wyciÄ…ganie meta-informacji z rÃ³Å¼nych
+typÃ³w plikÃ³w graficznych. W tej wersji obsÅ‚ugiwane sÄ… nastÄ™pujÄ…ce
+formaty plikÃ³w:
  - JPEG (czysty JFIF oraz Exif)
  - PNG
  - GIF
