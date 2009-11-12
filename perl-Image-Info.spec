@@ -16,9 +16,9 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	809086b72f7589455b92d6ded24b3db9
 Patch0:		%{name}-perl5.6-segv.patch
-BuildRequires:	perl-Compress-Zlib
-BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-IO-Compress
 BuildRequires:	perl-IO-String
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Compress-Zlib
 Requires:	perl-IO-String
