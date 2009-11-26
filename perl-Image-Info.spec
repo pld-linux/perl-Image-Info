@@ -8,13 +8,13 @@
 Summary:	Image::Info - extract meta information from image files
 Summary(pl.UTF-8):	Image::Info - wyodrębnienie meta-informacji z plików graficznych
 Name:		perl-Image-Info
-Version:	1.29
+Version:	1.30
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	809086b72f7589455b92d6ded24b3db9
+# Source0-md5:	f211fabee186b5a03d5ff389ceb204c4
 Patch0:		%{name}-perl5.6-segv.patch
 BuildRequires:	perl-IO-Compress
 BuildRequires:	perl-IO-String
