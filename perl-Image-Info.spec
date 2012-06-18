@@ -1,15 +1,15 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Image
 %define		pnam	Info
+%include	/usr/lib/rpm/macros.perl
 Summary:	Image::Info - extract meta information from image files
 Summary(pl.UTF-8):	Image::Info - wyodrębnienie meta-informacji z plików graficznych
 Name:		perl-Image-Info
 Version:	1.31
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -67,12 +67,17 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# Bundles are for CPAN, in rpm we should Suggest or sth
+%{__rm} $RPM_BUILD_ROOT%{_mandir}/man3/Bundle::Image::Info::*
+%{__rm} -r $RPM_BUILD_ROOT%{perl_vendorlib}/Bundle/Image/Info
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_vendorlib}/Image/*
-%{perl_vendorlib}/Bundle/Image/Info
-%{_mandir}/man3/*
+%{perl_vendorlib}/Image/Info.pm
+%{perl_vendorlib}/Image/Info
+%{perl_vendorlib}/Image/TIFF.pm
+%{_mandir}/man3/Image::Info*
