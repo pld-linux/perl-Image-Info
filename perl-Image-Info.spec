@@ -16,6 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4c5fa82385643e5153aa76090be0bbf4
 Patch0:		%{name}-perl5.6-segv.patch
+URL:		http://search.cpan.org/dist/Image-Info/
 BuildRequires:	perl-IO-Compress
 BuildRequires:	perl-IO-String
 BuildRequires:	perl-XML-LibXML-SAX
