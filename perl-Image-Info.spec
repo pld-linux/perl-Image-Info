@@ -4,7 +4,6 @@
 
 %define		pdir	Image
 %define		pnam	Info
-%include	/usr/lib/rpm/macros.perl
 Summary:	Image::Info - extract meta information from image files
 Summary(pl.UTF-8):	Image::Info - wyodrębnienie meta-informacji z plików graficznych
 Name:		perl-Image-Info
